@@ -125,7 +125,7 @@ function buildDiscordPayload(fields, capturaUrls, arsenalUrl, submissionNum) {
     `**In-Game Name:**\n${fields.inGameName}`,
     `**Clan:**\n${fields.clan}`,
     `**Warframe:**\n${fields.warframe}`,
-    fields.notes && fields.notes.trim() ? `**Notes:**\n${fields.notes}` : null
+    fields.notes && fields.notes.trim() ? `**Submission Details:**\n${fields.notes}` : null
   ].filter(Boolean).join('\n\n');
 
   const embed = {
