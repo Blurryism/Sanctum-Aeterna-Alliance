@@ -841,14 +841,6 @@
                 embed.thumbnail = { url: CONFIG.embed.avatarImage };
             }
 
-            if (CONFIG.embed.formLink && CONFIG.embed.formLink !== 'YOUR_FORM_URL_HERE') {
-                embed.fields = [{
-                    name: "📝 Submit Your Entry",
-                    value: `[Click here to enter the contest](${CONFIG.embed.formLink})`,
-                    inline: false
-                }];
-            }
-
             // Add first image to main embed
             if (arsenalUrl) {
                 embed.image = { url: arsenalUrl };
