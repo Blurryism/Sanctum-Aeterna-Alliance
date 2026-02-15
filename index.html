@@ -597,6 +597,11 @@
                 </div>
 
                 <div class="form-group">
+                    <label for="discordName">Discord Username <span class="required">*</span></label>
+                    <input type="text" id="discordName" name="discordName" required placeholder="Enter your Discord username">
+                </div>
+
+                <div class="form-group">
                     <label>Captura Submissions (up to 5)</label>
                     <div class="file-upload-area">
                         <div class="file-input-wrapper">
@@ -794,6 +799,7 @@
                 // Build multipart form — files go straight to the server
                 const body = new FormData();
                 body.append('inGameName',   document.getElementById('inGameName').value);
+                body.append('discordName',  document.getElementById('discordName').value);
                 body.append('clan',         document.getElementById('clan').value);
                 body.append('warframe',     document.getElementById('warframe').value);
                 body.append('notes',        document.getElementById('notes').value || '');
